@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+
+<ul>
+    <li> <a th:href="@{/params/requestParam(texto='hola como estas')}">hola</a></li>
+    <li> <a th:href="@{/params/httpservlett(saludo='hola como estas', numero=7)}">httpServlett</a></li>
+</ul>
+</body>
+</html>
